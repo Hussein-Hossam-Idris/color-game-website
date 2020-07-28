@@ -1,0 +1,110 @@
+body {
+    background-color: black;
+}
+
+.navDiv {
+    display: grid;
+    grid-auto-rows: minmax(50px, auto) minmax(50px, auto) auto ;
+    justify-content: stretch;
+}
+
+.navDiv > div {
+    background-color: #0a0147;
+    display: grid;
+    justify-content: center;
+    color: white;
+    transition: 1s;
+}
+
+.titleDiv {
+    padding: 20px;
+}
+
+.optionsDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
+    
+}
+
+.optionsDiv > div {
+    text-align: center;
+    background-color: white;
+}
+
+.optionsDiv > div > h3 {
+    text-align: center;
+    color: #0a0147;
+    font-size: x-large;
+}
+
+.optionsDiv > div > a {
+    text-decoration: none;
+    color: #0a0147;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: x-large;
+}
+
+.optionsDiv > div > a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #0a0147;
+    transition: 0.5s;
+}
+
+.wrapper {
+    margin: auto;
+    padding-top: 30px;
+    width: 600px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(200px, auto);
+    grid-gap: 1em;
+}
+
+.wrapper > div {
+    border-radius: 25%;
+    background-color: whitesmoke;
+}
+
+.wrapper > div:hover {
+    border: 3px white solid;
+}
+
+
+.RGBDiv {
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.RGBDiv > h2 {
+    font-size: xx-large;
+    width: 300px;
+    border: none;
+    background-color: #0a0147;
+    color: white;
+    text-decoration: none;
+    transition: 1s;
+}
+
+
+.disabledBox {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.enabledBox {
+    visibility:visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+
+/*.navDiv > div:nth-child(odd) {
+    background-color: gray;
+}*/
